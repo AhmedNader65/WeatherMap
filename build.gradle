@@ -10,6 +10,7 @@ buildscript {
         moshi_version = '1.13.0'
         androidXTestCoreVersion = '1.4.0'
         robolectricVersion = '4.8'
+        room_version = '2.4.3'
     }
 }
 plugins {
