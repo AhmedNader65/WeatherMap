@@ -5,8 +5,8 @@ import androidx.room.PrimaryKey
 import com.organization.nytimes.domain.model.Image
 
 
-@Entity(tableName = "articles")
-class CachedImage(
+@Entity(tableName = "images")
+data class CachedImage(
     @PrimaryKey
     val url: String,
     val articleId: Long,

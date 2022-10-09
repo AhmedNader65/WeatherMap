@@ -7,7 +7,7 @@ buildscript {
         nav_version = '2.5.2'
         retrofit_version = '2.9.0'
         okHttp_version = '4.9.3'
-        moshi_version = '1.13.0'
+        gson_version = '2.9.0'
         androidXTestCoreVersion = '1.4.0'
         robolectricVersion = '4.8'
         room_version = '2.4.3'

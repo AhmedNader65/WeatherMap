@@ -1,16 +1,12 @@
 package com.organization.nytimes.data.api.model
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.google.gson.Gson
+import com.google.gson.GsonBuilder
+import com.google.gson.reflect.TypeToken
 import com.organization.nytimes.data.utils.JsonReader
-import com.organization.nytimes.data.utils.JsonReader.getJson
 import com.organization.nytimes.domain.model.Article
 import com.organization.nytimes.domain.model.Image
-import com.organization.nytimes.utils.Logger
-import com.squareup.moshi.JsonAdapter
-import com.squareup.moshi.Moshi
-import com.squareup.moshi.Types
-import com.squareup.moshi.adapter
-import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import org.junit.Assert.*
 import org.junit.Before
 
@@ -23,12 +19,11 @@ class ApiArticlesKtTest {
 
     @Before
     fun gettingReady() {
-        val moshi = Moshi.Builder()
-            .add(KotlinJsonAdapterFactory())
-            .build()
-        val adapter = moshi.adapter<ApiContainer>(ApiContainer::class.java)
+        val gson = GsonBuilder().serializeNulls().create();
+        val type = object : TypeToken<ApiContainer>() {}.type
+
         val articlesRes = JsonReader.getJson("articles.json")
-        apiResponse = adapter.fromJson(articlesRes)!!
+        apiResponse = gson.fromJson(articlesRes, type)!!
     }
 
 

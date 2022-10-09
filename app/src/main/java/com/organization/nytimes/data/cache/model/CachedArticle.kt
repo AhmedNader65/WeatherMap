@@ -6,15 +6,15 @@ import com.organization.nytimes.domain.model.Article
 
 
 @Entity(tableName = "articles")
-class CachedArticle(
+data class CachedArticle(
     @PrimaryKey
-    val articleId: Long,
-    val url: String,
-    val published_date: String,
-    val updated: String,
-    val byline: String,
-    val title: String,
-    val abstract: String,
+    var articleId: Long = 0L,
+    var url: String = "",
+    var published_date: String = "",
+    var updated: String = "",
+    var byline: String = "",
+    var title: String = "",
+    var abstract: String = "",
 ) {
     companion object {
         fun fromDomain(article: Article): CachedArticle {

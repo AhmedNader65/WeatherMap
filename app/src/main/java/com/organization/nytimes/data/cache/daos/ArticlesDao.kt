@@ -1,14 +1,12 @@
 package com.organization.nytimes.data.cache.daos
 
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
-import androidx.room.Transaction
+import androidx.room.*
 import com.organization.nytimes.data.cache.model.CachedArticle
 import com.organization.nytimes.data.cache.model.CachedArticleWithImages
 import com.organization.nytimes.data.cache.model.CachedImage
 import kotlinx.coroutines.flow.Flow
 
+@Dao
 abstract class ArticlesDao {
 
     @Transaction
