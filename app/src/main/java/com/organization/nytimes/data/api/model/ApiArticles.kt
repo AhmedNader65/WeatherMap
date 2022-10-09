@@ -25,21 +25,21 @@ data class ApiArticles(
     @field:Json(name = "per_facet") val per_facet: List<String>?,
     @field:Json(name = "geo_facet") val geo_facet: List<String>?,
     @field:Json(name = "eta_id") val eta_id: Int?,
-    @field:Json(name = "media") val media: List<Media>?,
+    @field:Json(name = "media") val media: List<ApiMedia>?,
 )
 
-data class Media(
+data class ApiMedia(
     @field:Json(name = "type") val type: String?,
     @field:Json(name = "subtype") val subtype: String?,
     @field:Json(name = "caption") val caption: String?,
     @field:Json(name = "copyright") val copyright: String?,
     @field:Json(name = "approved_for_syndication") val approved_for_syndication: Int?,
-    @field:Json(name = "media-metadata") val media_metadata: List<MediaMetaData>?,
+    @field:Json(name = "media-metadata") val media_metadata: List<ApiMediaMetaData>?,
 )
 
-data class MediaMetaData(
-    @field:Json(name = "url") val type: String?,
-    @field:Json(name = "format") val subtype: String?,
+data class ApiMediaMetaData(
+    @field:Json(name = "url") val url: String?,
+    @field:Json(name = "format") val format: String?,
     @field:Json(name = "height") val height: Int?,
     @field:Json(name = "width") val width: Int?,
 )
