@@ -1,0 +1,1110 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2022 The New York Times Company.  All Rights Reserved.",
+  "num_results": 20,
+  "results": [
+    {
+      "uri": "nyt://article/6b915b80-14bb-5063-b0ec-2505eb55fc0d",
+      "url": "https://www.nytimes.com/2022/09/14/climate/patagonia-climate-philanthropy-chouinard.html",
+      "id": 100000008485792,
+      "asset_id": 100000008485792,
+      "source": "New York Times",
+      "published_date": "2022-09-14",
+      "updated": "2022-09-21 18:05:13",
+      "section": "Climate",
+      "subsection": "",
+      "nytdsection": "climate",
+      "adx_keywords": "Global Warming;Philanthropy;Corporate Social Responsibility;High Net Worth Individuals;Capitalism (Theory and Philosophy);Content Type: Personal Profile;Fashion and Apparel;Mergers, Acquisitions and Divestitures;Chouinard, Yvon;Patagonia Inc",
+      "column": null,
+      "byline": "By David Gelles",
+      "type": "Article",
+      "title": "Billionaire No More: Patagonia Founder Gives Away the Company",
+      "abstract": "Yvon Chouinard has forfeited ownership of the company he founded 49 years ago. The profits will now be used to fight climate change.",
+      "des_facet": [
+        "Global Warming",
+        "Philanthropy",
+        "Corporate Social Responsibility",
+        "High Net Worth Individuals",
+        "Capitalism (Theory and Philosophy)",
+        "Content Type: Personal Profile",
+        "Fashion and Apparel",
+        "Mergers, Acquisitions and Divestitures"
+      ],
+      "org_facet": [
+        "Patagonia Inc"
+      ],
+      "per_facet": [
+        "Chouinard, Yvon"
+      ],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Natalie Behring for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/09/12/climate/00cli-patagonia-promo/00cli-patagonia-promo-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/12/climate/00cli-patagonia-promo/00cli-patagonia-promo-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/12/climate/00cli-patagonia-promo/00cli-patagonia-promo-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/229225e8-e303-5a75-979a-c40da4de0756",
+      "url": "https://www.nytimes.com/2022/09/30/us/fort-myers-beach-hurricane-ian.html",
+      "id": 100000008560883,
+      "asset_id": 100000008560883,
+      "source": "New York Times",
+      "published_date": "2022-09-30",
+      "updated": "2022-10-02 12:41:39",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Hurricane Ian (2022);Rescues;Floods;Deaths (Fatalities);Coastal Areas;Fort Myers (Fla);Sanibel Island (Fla);Pine Island (Fla)",
+      "column": null,
+      "byline": "By Jennifer Reed, Patricia Mazzei and Jack Healy",
+      "type": "Article",
+      "title": "On Florida’s Islands, Scenes of Paradise Lost, Maybe for Good",
+      "abstract": "On Fort Myers Beach, Sanibel Island and Pine Island, cherished landmarks and an easygoing existence were obliterated by Hurricane Ian.",
+      "des_facet": [
+        "Hurricane Ian (2022)",
+        "Rescues",
+        "Floods",
+        "Deaths (Fatalities)",
+        "Coastal Areas"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [
+        "Fort Myers (Fla)",
+        "Sanibel Island (Fla)",
+        "Pine Island (Fla)"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Rescue workers in Fort Myers Beach on Thursday.",
+          "copyright": "Hilary Swift for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/09/30/us/30FORT-MYERS-1-sub/30FORT-MYERS-1-sub-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/30/us/30FORT-MYERS-1-sub/30FORT-MYERS-1-sub-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/30/us/30FORT-MYERS-1-sub/30FORT-MYERS-1-sub-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/b091a5d0-7811-566e-9e97-955aa7a2f3f0",
+      "url": "https://www.nytimes.com/2022/09/19/us/adnan-syed-murder-conviction-overturned.html",
+      "id": 100000008536121,
+      "asset_id": 100000008536121,
+      "source": "New York Times",
+      "published_date": "2022-09-19",
+      "updated": "2022-09-20 14:38:59",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Decisions and Verdicts;Murders, Attempted Murders and Homicides;Prosecutorial Misconduct;False Arrests, Convictions and Imprisonments;Syed, Adnan;Phinn, Melissa M;Mosby, Marilyn J (1980- );Lee, Hae Min (1980-99);Baltimore (Md)",
+      "column": null,
+      "byline": "By Michael Levenson",
+      "type": "Article",
+      "title": "Judge Vacates Murder Conviction of Adnan Syed of ‘Serial’",
+      "abstract": "Mr. Syed, 41, had been serving a life sentence for the 1999 murder of his high school classmate Hae Min Lee. The judge gave prosecutors 30 days to proceed with a new trial or drop the case.",
+      "des_facet": [
+        "Decisions and Verdicts",
+        "Murders, Attempted Murders and Homicides",
+        "Prosecutorial Misconduct",
+        "False Arrests, Convictions and Imprisonments"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Syed, Adnan",
+        "Phinn, Melissa M",
+        "Mosby, Marilyn J (1980- )",
+        "Lee, Hae Min (1980-99)"
+      ],
+      "geo_facet": [
+        "Baltimore (Md)"
+      ],
+      "media": [],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/d9173db2-fb70-5cc7-8cce-513299918012",
+      "url": "https://www.nytimes.com/2022/09/27/dining/anthony-bourdain-biography.html",
+      "id": 100000008546959,
+      "asset_id": 100000008546959,
+      "source": "New York Times",
+      "published_date": "2022-09-27",
+      "updated": "2022-09-29 01:00:03",
+      "section": "Food",
+      "subsection": "",
+      "nytdsection": "food",
+      "adx_keywords": "Books and Literature;Content Type: Personal Profile;Chefs;Suicides and Suicide Attempts;Bourdain, Anthony;Leerhsen, Charles;Argento, Asia",
+      "column": null,
+      "byline": "By Kim Severson",
+      "type": "Article",
+      "title": "The Last, Painful Days of Anthony Bourdain",
+      "abstract": "A new, unauthorized biography reveals intimate, often raw, details of the TV star’s life, including his tumultuous relationship with the Italian actor Asia Argento. And it’s drawing criticism from many of his friends and family.",
+      "des_facet": [
+        "Books and Literature",
+        "Content Type: Personal Profile",
+        "Chefs",
+        "Suicides and Suicide Attempts"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Bourdain, Anthony",
+        "Leerhsen, Charles",
+        "Argento, Asia"
+      ],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A new book about Anthony Bourdain reveals fresh details about his life and last days. ",
+          "copyright": "Alex Welsh for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/09/28/dining/28bourdain-book2/27bourdain-book2-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/28/dining/28bourdain-book2/27bourdain-book2-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/28/dining/28bourdain-book2/27bourdain-book2-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/d98ae44a-74ed-5873-8793-59a35ae6e9d2",
+      "url": "https://www.nytimes.com/2022/10/03/us/nyu-organic-chemistry-petition.html",
+      "id": 100000008555021,
+      "asset_id": 100000008555021,
+      "source": "New York Times",
+      "published_date": "2022-10-03",
+      "updated": "2022-10-05 16:22:02",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Colleges and Universities;Chemistry;Tests and Examinations;Coronavirus (2019-nCoV);Medical Schools;Jones, Maitland Jr;New York University",
+      "column": null,
+      "byline": "By Stephanie Saul",
+      "type": "Article",
+      "title": "At N.Y.U., Students Were Failing Organic Chemistry. Who Was to Blame?",
+      "abstract": "Maitland Jones Jr., a respected professor, defended his standards. But students started a petition, and the university dismissed him.",
+      "des_facet": [
+        "Colleges and Universities",
+        "Chemistry",
+        "Tests and Examinations",
+        "Coronavirus (2019-nCoV)",
+        "Medical Schools"
+      ],
+      "org_facet": [
+        "New York University"
+      ],
+      "per_facet": [
+        "Jones, Maitland Jr"
+      ],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Students said Maitland Jones’s course was too hard and blamed him and his teaching methods for their poor showings.",
+          "copyright": "Janice Chung for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/09/29/us/00tough-teacher/00tough-teacher-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/29/us/00tough-teacher/00tough-teacher-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/29/us/00tough-teacher/00tough-teacher-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/ad7e88af-27a9-50f6-a898-b6b1c75a2adb",
+      "url": "https://www.nytimes.com/2022/09/17/world/europe/meghan-harry-queen-funeral.html",
+      "id": 100000008532341,
+      "asset_id": 100000008532341,
+      "source": "New York Times",
+      "published_date": "2022-09-17",
+      "updated": "2022-09-18 16:25:44",
+      "section": "World",
+      "subsection": "Europe",
+      "nytdsection": "world",
+      "adx_keywords": "News and News Media;Royal Families;Harry, Duke of Sussex;Markle, Meghan;William, Duke of Cambridge;Catherine, Duchess of Cambridge;Elizabeth II, Queen of Great Britain;Great Britain",
+      "column": null,
+      "byline": "By Sarah Lyall",
+      "type": "Article",
+      "title": "Lip-Reading and Fashion Criticism: Meghan’s U.K. Trip Under Scrutiny",
+      "abstract": "The actions of Meghan, and her husband, Prince Harry, as they mourn the queen have been the subject of biting social commentary — as usual.",
+      "des_facet": [
+        "News and News Media",
+        "Royal Families"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Harry, Duke of Sussex",
+        "Markle, Meghan",
+        "William, Duke of Cambridge",
+        "Catherine, Duchess of Cambridge",
+        "Elizabeth II, Queen of Great Britain"
+      ],
+      "geo_facet": [
+        "Great Britain"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Meghan, the Duchess of Sussex, with Prince Harry, her husband, behind Prince William and Catherine, the Princess of Wales, viewing flowers last Saturday that were left for Queen Elizabeth II.",
+          "copyright": "Mary Turner for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/09/14/world/00queen-meghan/00queen-meghan-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/14/world/00queen-meghan/00queen-meghan-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/14/world/00queen-meghan/00queen-meghan-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/8949e0a0-9e06-5bb0-a122-e09121faeb09",
+      "url": "https://www.nytimes.com/2022/09/28/business/mackenzie-scott-dan-jewett.html",
+      "id": 100000008554123,
+      "asset_id": 100000008554123,
+      "source": "New York Times",
+      "published_date": "2022-09-28",
+      "updated": "2022-09-28 22:08:20",
+      "section": "Business",
+      "subsection": "",
+      "nytdsection": "business",
+      "adx_keywords": "High Net Worth Individuals;Philanthropy;Divorce, Separations and Annulments;Scott, MacKenzie;Jewett, Dan",
+      "column": null,
+      "byline": "By Nicholas Kulish, Rebecca R. Ruiz and Karen Weise",
+      "type": "Article",
+      "title": "MacKenzie Scott, Billionaire Philanthropist, Files for Divorce",
+      "abstract": "Less than two years after announcing the marriage and their intent to give money away together, Ms. Scott has parted ways with her second husband, a teacher.",
+      "des_facet": [
+        "High Net Worth Individuals",
+        "Philanthropy",
+        "Divorce, Separations and Annulments"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Scott, MacKenzie",
+        "Jewett, Dan"
+      ],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "MacKenzie Scott married Dan Jewett early last year.",
+          "copyright": "Evan Agostini/Invision, via AP",
+          "approved_for_syndication": 0,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/09/29/business/29Scottjump-1/merlin_181310976_9c6e6ae6-40c9-47ec-a5f7-2d414169433b-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/29/business/29Scottjump-1/merlin_181310976_9c6e6ae6-40c9-47ec-a5f7-2d414169433b-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/29/business/29Scottjump-1/merlin_181310976_9c6e6ae6-40c9-47ec-a5f7-2d414169433b-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/14165676-4a3e-5d15-b74b-71effac5b03e",
+      "url": "https://www.nytimes.com/2022/10/04/movies/angelina-jolie-brad-pitt-lawsuit.html",
+      "id": 100000008565706,
+      "asset_id": 100000008565706,
+      "source": "New York Times",
+      "published_date": "2022-10-04",
+      "updated": "2022-10-05 10:50:30",
+      "section": "Movies",
+      "subsection": "",
+      "nytdsection": "movies",
+      "adx_keywords": "Suits and Litigation (Civil);Wines;Child Abuse and Neglect;Divorce, Separations and Annulments;Domestic Violence;Jolie, Angelina;Pitt, Brad;Chateau Miraval;France;California",
+      "column": null,
+      "byline": "By Julia Jacobs",
+      "type": "Article",
+      "title": "Angelina Jolie Details Abuse Allegations Against Brad Pitt in Countersuit",
+      "abstract": "In court papers related to a legal battle over a French winery they once owned together, she claims that he was abusive to her and their children during a 2016 plane ride.",
+      "des_facet": [
+        "Suits and Litigation (Civil)",
+        "Wines",
+        "Child Abuse and Neglect",
+        "Divorce, Separations and Annulments",
+        "Domestic Violence"
+      ],
+      "org_facet": [
+        "Chateau Miraval"
+      ],
+      "per_facet": [
+        "Jolie, Angelina",
+        "Pitt, Brad"
+      ],
+      "geo_facet": [
+        "France",
+        "California"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Angelina Jolie countersued her ex-husband Brad Pitt as part of a legal battle over a winery they once owned together. ",
+          "copyright": "Associated Press",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/10/04/multimedia/04lawsuit-1-1-b5a5/04lawsuit-1-1-b5a5-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/10/04/multimedia/04lawsuit-1-1-b5a5/04lawsuit-1-1-b5a5-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/10/04/multimedia/04lawsuit-1-1-b5a5/04lawsuit-1-1-b5a5-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/3584a05b-88ca-594f-9cc0-f2b773cee2ae",
+      "url": "https://www.nytimes.com/2022/09/28/arts/music/coolio-rapper-dead.html",
+      "id": 100000008557256,
+      "asset_id": 100000008557256,
+      "source": "New York Times",
+      "published_date": "2022-09-28",
+      "updated": "2022-10-01 06:42:44",
+      "section": "Arts",
+      "subsection": "Music",
+      "nytdsection": "arts",
+      "adx_keywords": "Deaths (Obituaries);Rap and Hip-Hop;Nineteen Hundred Nineties;audio-neutral-informative;Coolio",
+      "column": null,
+      "byline": "By Eduardo Medina and McKenna Oxenden",
+      "type": "Article",
+      "title": "Coolio, ‘Gangsta’s Paradise’ Rapper, Dies at 59",
+      "abstract": "From a bookish, asthmatic child to mainstream hitmaker, the West Coast M.C. charted a distinctive path to hip-hop stardom.",
+      "des_facet": [
+        "Deaths (Obituaries)",
+        "Rap and Hip-Hop",
+        "Nineteen Hundred Nineties",
+        "audio-neutral-informative"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Coolio"
+      ],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Coolio in 1995. His “Gangsta’s Paradise” hit No. 1 on Billboard’s Hot 100 chart that year.",
+          "copyright": "Paul Bergen/Redferns, via Getty Images",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/09/30/multimedia/29Coolio-01/28XP-Coolio-obit-01-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/30/multimedia/29Coolio-01/28XP-Coolio-obit-01-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/30/multimedia/29Coolio-01/28XP-Coolio-obit-01-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/b2969903-53b7-5d69-a199-96e30f30f2d0",
+      "url": "https://www.nytimes.com/2022/09/29/world/europe/queen-elizabeth-death-time.html",
+      "id": 100000008557897,
+      "asset_id": 100000008557897,
+      "source": "New York Times",
+      "published_date": "2022-09-29",
+      "updated": "2022-09-29 22:33:03",
+      "section": "World",
+      "subsection": "Europe",
+      "nytdsection": "world",
+      "adx_keywords": "Royal Families;Anne, Princess Royal (1950- );Charles III, King of the United Kingdom;Elizabeth II, Queen of Great Britain;Buckingham Palace;Great Britain;Scotland",
+      "column": null,
+      "byline": "By Mark Landler",
+      "type": "Article",
+      "title": "Queen’s Death Certificate Reveals Cause and Time of Death",
+      "abstract": "Queen Elizabeth died of “old age” at 3:10 p.m. on Sept. 8, the paperwork shows.",
+      "des_facet": [
+        "Royal Families"
+      ],
+      "org_facet": [
+        "Buckingham Palace"
+      ],
+      "per_facet": [
+        "Anne, Princess Royal (1950- )",
+        "Charles III, King of the United Kingdom",
+        "Elizabeth II, Queen of Great Britain"
+      ],
+      "geo_facet": [
+        "Great Britain",
+        "Scotland"
+      ],
+      "media": [
+        {}
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://legacycollection/ed2e56a0-b185-54d5-a9ba-7b629ca41d53",
+      "url": "https://www.nytimes.com/live/2022/09/27/us/hurricane-ian-florida-news",
+      "id": 100000008552006,
+      "asset_id": 100000008552006,
+      "source": "",
+      "published_date": "2022-09-27",
+      "updated": "2022-10-02 12:51:20",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Hurricanes and Tropical Storms",
+      "column": null,
+      "byline": "",
+      "type": "LegacyCollection",
+      "title": "Hurricane Ian Takes Aim at Florida After Leaving Cuba in the Dark",
+      "abstract": "The National Hurricane Center said the eye will come ashore in Florida on Wednesday afternoon. Some 2.5 million residents have been asked to evacuate. All of Cuba was without power after the storm crossed its western provinces on Tuesday.",
+      "des_facet": [
+        "Hurricanes and Tropical Storms"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/c6e20e23-57d7-5a28-ae5b-fcf803e471a3",
+      "url": "https://www.nytimes.com/2022/09/11/nyregion/hasidic-yeshivas-schools-new-york.html",
+      "id": 100000008418550,
+      "asset_id": 100000008418550,
+      "source": "New York Times",
+      "published_date": "2022-09-11",
+      "updated": "2022-09-12 10:15:19",
+      "section": "New York",
+      "subsection": "",
+      "nytdsection": "new york",
+      "adx_keywords": "Jews and Judaism;Private and Sectarian Schools;Teachers and School Employees;Education (K-12);Corporal Punishment;Yiddish Language;Politics and Government;Reading and Writing Skills (Education);Rabbis;Hasidism;Education Department (NYC);Education Department (NYS);United Talmudical Academy (Brooklyn, NY);Yeshiva Kehilath Yakov (Brooklyn, NY);New York City;New York State",
+      "column": null,
+      "byline": "By Eliza Shapiro, Brian M. Rosenthal and Jonah Markowitz",
+      "type": "Article",
+      "title": "In Hasidic Enclaves, Failing Private Schools Flush With Public Money",
+      "abstract": "New York’s Hasidic Jewish religious schools have benefited from $1 billion in government funding in the last four years but are unaccountable to outside oversight.",
+      "des_facet": [
+        "Jews and Judaism",
+        "Private and Sectarian Schools",
+        "Teachers and School Employees",
+        "Education (K-12)",
+        "Corporal Punishment",
+        "Yiddish Language",
+        "Politics and Government",
+        "Reading and Writing Skills (Education)",
+        "Rabbis",
+        "Hasidism"
+      ],
+      "org_facet": [
+        "Education Department (NYC)",
+        "Education Department (NYS)",
+        "United Talmudical Academy (Brooklyn, NY)",
+        "Yeshiva Kehilath Yakov (Brooklyn, NY)"
+      ],
+      "per_facet": [],
+      "geo_facet": [
+        "New York City",
+        "New York State"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Jonah Markowitz for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/08/16/nyregion/00yeshivas-promo/00yeshivas-promo-thumbStandard-v2.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/08/16/nyregion/00yeshivas-promo/00yeshivas-promo-mediumThreeByTwo210-v2.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/08/16/nyregion/00yeshivas-promo/00yeshivas-promo-mediumThreeByTwo440-v2.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/27cff9eb-0b7a-5f56-98f6-1cc226ed5cb0",
+      "url": "https://www.nytimes.com/2022/09/26/style/andres-valencia-art-paintings.html",
+      "id": 100000008548208,
+      "asset_id": 100000008548208,
+      "source": "New York Times",
+      "published_date": "2022-09-26",
+      "updated": "2022-09-28 23:15:54",
+      "section": "Style",
+      "subsection": "",
+      "nytdsection": "style",
+      "adx_keywords": "Art;Content Type: Personal Profile;Children and Childhood;Valencia, Andres (2011- )",
+      "column": null,
+      "byline": "By Alex Hawgood",
+      "type": "Article",
+      "title": "Six-Figure Artworks, by a Fifth Grader",
+      "abstract": "Andres Valencia’s paintings have sold for more than $125,000. And he’s 10 years old.",
+      "des_facet": [
+        "Art",
+        "Content Type: Personal Profile",
+        "Children and Childhood"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Valencia, Andres (2011- )"
+      ],
+      "geo_facet": [],
+      "media": [
+        {}
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/fe1fd3b2-1278-53c8-9706-33c6fe4da6b0",
+      "url": "https://www.nytimes.com/2022/09/08/world/europe/queen-elizabeth-dead.html",
+      "id": 100000007711210,
+      "asset_id": 100000007711210,
+      "source": "New York Times",
+      "published_date": "2022-09-08",
+      "updated": "2022-09-09 16:22:48",
+      "section": "World",
+      "subsection": "Europe",
+      "nytdsection": "world",
+      "adx_keywords": "Deaths (Obituaries);Royal Families;Politics and Government;Elizabeth II, Queen of Great Britain;Great Britain",
+      "column": null,
+      "byline": "By Alan Cowell",
+      "type": "Article",
+      "title": "Queen Elizabeth II Dies at 96; Was Britain’s Longest-Reigning Monarch",
+      "abstract": "She ruled for seven decades, unshakably committed to the rituals of her role amid epic social and economic change and family scandal.",
+      "des_facet": [
+        "Deaths (Obituaries)",
+        "Royal Families",
+        "Politics and Government"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Elizabeth II, Queen of Great Britain"
+      ],
+      "geo_facet": [
+        "Great Britain"
+      ],
+      "media": [],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/7aab080a-19a2-5237-939b-c55f8dd96042",
+      "url": "https://www.nytimes.com/2022/09/13/world/europe/king-charles-wealth.html",
+      "id": 100000008528315,
+      "asset_id": 100000008528315,
+      "source": "New York Times",
+      "published_date": "2022-09-13",
+      "updated": "2022-09-13 13:38:55",
+      "section": "World",
+      "subsection": "Europe",
+      "nytdsection": "world",
+      "adx_keywords": "Royal Families;Wills and Estates;Sovereign Wealth Funds;Philanthropy;Charles III, King of the United Kingdom;Charles, Prince of Wales;Elizabeth II, Queen of Great Britain;Crown Estate;Duchy of Cornwall;Great Britain",
+      "column": null,
+      "byline": "By Jane Bradley and Euan Ward",
+      "type": "Article",
+      "title": "King Charles Inherits Untold Riches, and Passes Off His Own Empire",
+      "abstract": "As prince, Charles used tax breaks, offshore accounts and canny real estate investments to turn a sleepy estate into a billion-dollar business.",
+      "des_facet": [
+        "Royal Families",
+        "Wills and Estates",
+        "Sovereign Wealth Funds",
+        "Philanthropy"
+      ],
+      "org_facet": [
+        "Crown Estate",
+        "Duchy of Cornwall"
+      ],
+      "per_facet": [
+        "Charles III, King of the United Kingdom",
+        "Charles, Prince of Wales",
+        "Elizabeth II, Queen of Great Britain"
+      ],
+      "geo_facet": [
+        "Great Britain"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "King Charles III spent years turning his royal estate into a billion-dollar portfolio.",
+          "copyright": "James Hill for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/09/11/world/12queen-money/12queen-money-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/11/world/12queen-money/merlin_212887911_367e40fa-e29f-45e4-af44-cf1f261c2c19-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/11/world/12queen-money/merlin_212887911_367e40fa-e29f-45e4-af44-cf1f261c2c19-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/ff9c1b2b-b688-5519-907d-4deab871c3a3",
+      "url": "https://www.nytimes.com/2022/09/19/arts/television/house-of-the-dragon-milly-alcock-emily-carey.html",
+      "id": 100000008538036,
+      "asset_id": 100000008538036,
+      "source": "New York Times",
+      "published_date": "2022-09-19",
+      "updated": "2022-09-19 22:15:19",
+      "section": "Arts",
+      "subsection": "Television",
+      "nytdsection": "arts",
+      "adx_keywords": "Television;Content Type: Personal Profile;Alcock, Milly (2000- );Carey, Emily (2003- )",
+      "column": null,
+      "byline": "By Sean T. Collins",
+      "type": "Article",
+      "title": "‘House of the Dragon’ Stars Say Goodbye to HBO’s Biggest Hit",
+      "abstract": "In a joint interview, Milly Alcock and Emily Carey discussed their now-completed stint in the HBO epic. “We were forced to hang on to each other for dear life,” Alcock said.",
+      "des_facet": [
+        "Television",
+        "Content Type: Personal Profile"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Alcock, Milly (2000- )",
+        "Carey, Emily (2003- )"
+      ],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "“We’re very lucky in that we get along in real life, so the chemistry came very organically,” Carey said.",
+          "copyright": "Kalpesh Lathigra for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/09/20/arts/19dragonQA-2/19dragonQA-2-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/20/arts/19dragonQA-2/19dragonQA-2-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/20/arts/19dragonQA-2/19dragonQA-2-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/3436605b-fa9e-5f64-a246-1a64e6b0f6a0",
+      "url": "https://www.nytimes.com/2022/10/05/us/politics/ukraine-russia-dugina-assassination.html",
+      "id": 100000008564962,
+      "asset_id": 100000008564962,
+      "source": "New York Times",
+      "published_date": "2022-10-05",
+      "updated": "2022-10-06 10:15:53",
+      "section": "U.S.",
+      "subsection": "Politics",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Assassinations and Attempted Assassinations;Espionage and Intelligence Services;Russian Invasion of Ukraine (2022);United States International Relations;Dugina, Daria (1992-2022);Dugin, Alexander (1962- );Zelensky, Volodymyr;Russia;Ukraine",
+      "column": null,
+      "byline": "By Julian E. Barnes, Adam Goldman, Adam Entous and Michael Schwirtz",
+      "type": "Article",
+      "title": "U.S. Believes Ukrainians Were Behind an Assassination in Russia",
+      "abstract": "American officials said they were not aware of the plan ahead of time for the attack that killed Daria Dugina and that they had admonished Ukraine over it.",
+      "des_facet": [
+        "Assassinations and Attempted Assassinations",
+        "Espionage and Intelligence Services",
+        "Russian Invasion of Ukraine (2022)",
+        "United States International Relations"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Dugina, Daria (1992-2022)",
+        "Dugin, Alexander (1962- )",
+        "Zelensky, Volodymyr"
+      ],
+      "geo_facet": [
+        "Russia",
+        "Ukraine"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Daria Dugina’s memorial service in Moscow in August. U.S. intelligence agencies believe that parts of the Ukrainian government authorized the attack that killed her.",
+          "copyright": "Kirill Kudryavtsev/Agence France-Presse — Getty Images",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/10/05/us/politics/05dc-intel-1/merlin_211819080_89b7fb20-74e1-4fe9-856f-e6ffc55dfa59-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/10/05/us/politics/05dc-intel-1/merlin_211819080_89b7fb20-74e1-4fe9-856f-e6ffc55dfa59-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/10/05/us/politics/05dc-intel-1/merlin_211819080_89b7fb20-74e1-4fe9-856f-e6ffc55dfa59-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/c10a520a-1e9a-5c9b-854a-dd1d08abe8ae",
+      "url": "https://www.nytimes.com/2022/10/03/world/asia/japan-north-korea-missile.html",
+      "id": 100000008565288,
+      "asset_id": 100000008565288,
+      "source": "New York Times",
+      "published_date": "2022-10-03",
+      "updated": "2022-10-08 14:26:25",
+      "section": "World",
+      "subsection": "Asia Pacific",
+      "nytdsection": "world",
+      "adx_keywords": "Defense and Military Forces;Missiles and Missile Defense Systems;United States International Relations;International Relations;Japan;North Korea;South Korea",
+      "column": null,
+      "byline": "By Motoko Rich and Choe Sang-Hun",
+      "type": "Article",
+      "title": "North Korea Fires Powerful Missile, Using Old Playbook in a New World",
+      "abstract": "The last time Pyongyang launched a weapon over Japan was in 2017, when Donald J. Trump was president and Kim Jong-un seemed intent on escalating conflict with Washington.",
+      "des_facet": [
+        "Defense and Military Forces",
+        "Missiles and Missile Defense Systems",
+        "United States International Relations",
+        "International Relations"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [
+        "Japan",
+        "North Korea",
+        "South Korea"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A screen showing images of North Korea’s leader, Kim Jong-un, during a news update in Tokyo on Tuesday. North Korea’s missile launch prompted an alert in Japan that morning.",
+          "copyright": "Richard A. Brooks/Agence France-Presse — Getty Images",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/10/04/world/04nkorea-missile-top/04nkorea-missile-top-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/10/04/world/04nkorea-missile-top/04nkorea-missile-top-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/10/04/world/04nkorea-missile-top/04nkorea-missile-top-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/8461fa7c-95b4-56db-b92b-c9f5e490fdb3",
+      "url": "https://www.nytimes.com/2022/09/14/business/social-security-cola-increase.html",
+      "id": 100000008532348,
+      "asset_id": 100000008532348,
+      "source": "New York Times",
+      "published_date": "2022-09-14",
+      "updated": "2022-09-15 13:35:08",
+      "section": "Business",
+      "subsection": "",
+      "nytdsection": "business",
+      "adx_keywords": "Social Security (US);Medicare;Inflation (Economics);Consumer Price Index;Aduhelm (Drug);Senior Citizens League",
+      "column": null,
+      "byline": "By Mark Miller",
+      "type": "Article",
+      "title": "Social Security’s Cost-of-Living Increase Will Be Largest in Four Decades, an Estimate Says",
+      "abstract": "Retirees will learn the amount of the increase for 2023 in October, and the current estimate is that it will be 8.7%.",
+      "des_facet": [
+        "Social Security (US)",
+        "Medicare",
+        "Inflation (Economics)",
+        "Consumer Price Index",
+        "Aduhelm (Drug)"
+      ],
+      "org_facet": [
+        "Senior Citizens League"
+      ],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "More than 70 million people — including retirees, those receiving disability and very low-income Americans — will be affected by the benefit increase.",
+          "copyright": "Valerie Macon/AFP, via Getty Images",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/09/14/business/14social-security/14social-security-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/14/business/14social-security/14social-security-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/14/business/14social-security/14social-security-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/c98deb7f-a571-50f2-809b-ca5a456dea4a",
+      "url": "https://www.nytimes.com/2022/09/28/us/politics/trump-special-master-mar-a-lago.html",
+      "id": 100000008554407,
+      "asset_id": 100000008554407,
+      "source": "New York Times",
+      "published_date": "2022-09-28",
+      "updated": "2022-09-29 18:54:45",
+      "section": "U.S.",
+      "subsection": "Politics",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Classified Information and State Secrets;Search and Seizure;Executive Privilege, Doctrine of;Trump, Donald J;Dearie, Raymond J;Mar-a-Lago (Palm Beach, Fla);Federal Bureau of Investigation;Justice Department",
+      "column": null,
+      "byline": "By Charlie Savage",
+      "type": "Article",
+      "title": "‘Giant Backfire’: Trump’s Demand for Special Master Is Looking Like a Mistake",
+      "abstract": "The former president failed to derail the criminal investigation into his hoarding of sensitive documents and is stuck paying for a costly process that threatens to undermine his public claims.",
+      "des_facet": [
+        "Classified Information and State Secrets",
+        "Search and Seizure",
+        "Executive Privilege, Doctrine of"
+      ],
+      "org_facet": [
+        "Mar-a-Lago (Palm Beach, Fla)",
+        "Federal Bureau of Investigation",
+        "Justice Department"
+      ],
+      "per_facet": [
+        "Trump, Donald J",
+        "Dearie, Raymond J"
+      ],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "An appeals court ruling last week against former President Donald J. Trump suggests the benefits of his bid for a special master are eroding.",
+          "copyright": "Hannah Beier for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/09/28/us/politics/28dc-trump-backfire_1/28dc-trump-backfire_1-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/28/us/politics/28dc-trump-backfire_1/28dc-trump-backfire_1-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/09/28/us/politics/28dc-trump-backfire_1/28dc-trump-backfire_1-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    }
+  ]
+}

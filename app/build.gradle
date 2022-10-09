@@ -22,7 +22,12 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField("String", "API_KEY", apikeyProperties['API_KEY'])
     }
-
+    // to give  unit tests to all the resources, assets and manifests.
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -46,8 +51,13 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'junit:junit:4.12'
+    implementation 'androidx.test.ext:junit-ktx:1.1.3'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // AndroidX Test - JVM testing
+    testImplementation "androidx.test:core-ktx:$androidXTestCoreVersion"
+    testImplementation "org.robolectric:robolectric:$robolectricVersion"
 
 
     // DI

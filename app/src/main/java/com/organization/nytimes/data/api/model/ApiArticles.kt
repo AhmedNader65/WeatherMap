@@ -1,5 +1,7 @@
 package com.organization.nytimes.data.api.model
 
+import com.organization.nytimes.domain.model.Article
+import com.organization.nytimes.domain.model.Image
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
@@ -34,7 +36,7 @@ data class ApiMedia(
     @field:Json(name = "caption") val caption: String?,
     @field:Json(name = "copyright") val copyright: String?,
     @field:Json(name = "approved_for_syndication") val approved_for_syndication: Int?,
-    @field:Json(name = "media-metadata") val media_metadata: List<ApiMediaMetaData>?,
+    @field:Json(name = "media-metadata") val `media-metadata`: List<ApiMediaMetaData>?,
 )
 
 data class ApiMediaMetaData(
@@ -43,3 +45,25 @@ data class ApiMediaMetaData(
     @field:Json(name = "height") val height: Int?,
     @field:Json(name = "width") val width: Int?,
 )
+
+fun ApiMediaMetaData.mapToDomain(): Image {
+    return Image(
+        url = url.orEmpty(),
+        format = format.orEmpty(),
+        height = height ?: 0,
+        width = width ?: 0,
+    )
+}
+
+fun ApiArticles.mapToDomain(): Article {
+    return Article(
+        id ?: throw MappingException("Article ID cannot be null"),
+        url.orEmpty(),
+        published_date.orEmpty(),
+        updated.orEmpty(),
+        byline.orEmpty(),
+        title.orEmpty(),
+        abstract.orEmpty(),
+        media?.first()?.`media-metadata`?.map { it.mapToDomain() }.orEmpty()
+    )
+}
