@@ -14,14 +14,18 @@ data class Article(
     val abstract: String,
     val media: List<Image>,
 ) {
-    fun getSmallestImage(): String? {
+    fun getSmallestImage(): String {
         media.find { it.format == THUMBNAIL_TYPE }?.let {
             return it.url
         }.run {
             media.find { it.format == MEDIUM210_TYPE }?.let {
                 return it.url
             }.run {
-                return media.find { it.format == MEDIUM440_TYPE }?.url
+                media.find { it.format == MEDIUM440_TYPE }?.let {
+                    return it.url
+                }.run {
+                    return ""
+                }
             }
         }
     }
