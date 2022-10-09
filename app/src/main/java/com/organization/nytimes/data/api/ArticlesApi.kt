@@ -1,5 +1,6 @@
 package com.organization.nytimes.data.api
 
+import com.organization.nytimes.BuildConfig
 import com.organization.nytimes.data.api.model.ApiArticles
 import com.organization.nytimes.data.api.model.ApiContainer
 import retrofit2.http.GET
@@ -12,7 +13,7 @@ interface ArticlesApi {
     suspend fun getMostViewed(
         @Path("section") allSections: String,
         @Path("period") period: Int,
-        @Query("api-key") apiKey: String
+        @Query("api-key") apiKey: String =  BuildConfig.API_KEY
     ): ApiContainer
 
 }
