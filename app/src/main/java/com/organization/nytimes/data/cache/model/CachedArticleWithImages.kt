@@ -23,6 +23,7 @@ fun CachedArticleWithImages.toDomain(): Article {
         cachedArticle.byline,
         cachedArticle.title,
         cachedArticle.abstract,
+        cachedArticle.caption,
         cachedImages.map { it.toDomain() }
     )
 }

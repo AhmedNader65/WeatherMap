@@ -8,4 +8,5 @@ interface ArticlesRepository {
     suspend fun requestArticles(section: String, period: Int): List<Article>
     suspend fun storeArticles(articles: List<Article>)
     fun getArticles(): Flow<List<Article>>
+    fun getArticle(id: Long): Flow<Article>
 }

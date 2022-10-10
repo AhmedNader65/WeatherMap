@@ -14,6 +14,7 @@ data class CachedArticle(
     var updated: String = "",
     var byline: String = "",
     var title: String = "",
+    var caption: String = "",
     var abstract: String = "",
 ) {
     companion object {
@@ -25,6 +26,7 @@ data class CachedArticle(
                 article.updated,
                 article.byline,
                 article.title,
+                article.caption,
                 article.abstract,
             )
         }

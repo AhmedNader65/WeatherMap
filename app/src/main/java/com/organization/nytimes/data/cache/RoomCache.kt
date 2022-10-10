@@ -12,6 +12,8 @@ class RoomCache @Inject constructor(
 ) : Cache {
     override fun getArticles(): Flow<List<CachedArticleWithImages>> = articlesDao.getAllArticles()
 
+    override fun getArticle(id: Long): Flow<CachedArticleWithImages> = articlesDao.getArticleById(id)
+
     override suspend fun storeArticles(vararg articles: CachedArticle) =
         articlesDao.insertArticle(*articles)
 

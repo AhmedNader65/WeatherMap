@@ -61,6 +61,7 @@ fun ApiArticles.mapToDomain(): Article {
         byline.orEmpty(),
         title.orEmpty(),
         abstract.orEmpty(),
+        media?.first()?.caption.orEmpty(),
         media?.first()?.`media-metadata`?.map { it.mapToDomain() }.orEmpty()
     )
 }

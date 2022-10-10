@@ -12,6 +12,7 @@ data class Article(
     val byline: String,
     val title: String,
     val abstract: String,
+    val caption: String,
     val media: List<Image>,
 ) {
     fun getSmallestImage(): String {
@@ -22,6 +23,22 @@ data class Article(
                 return it.url
             }.run {
                 media.find { it.format == MEDIUM440_TYPE }?.let {
+                    return it.url
+                }.run {
+                    return ""
+                }
+            }
+        }
+    }
+
+    fun getBiggestImage(): String {
+        media.find { it.format == MEDIUM440_TYPE }?.let {
+            return it.url
+        }.run {
+            media.find { it.format == MEDIUM210_TYPE }?.let {
+                return it.url
+            }.run {
+                media.find { it.format == THUMBNAIL_TYPE }?.let {
                     return it.url
                 }.run {
                     return ""

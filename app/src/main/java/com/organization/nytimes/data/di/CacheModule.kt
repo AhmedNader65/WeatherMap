@@ -32,7 +32,7 @@ abstract class CacheModule {
                 context,
                 ArticlesDatabase::class.java,
                 "articles.db"
-            )
+            ).fallbackToDestructiveMigration()
                 .build()
         }
 

@@ -13,6 +13,10 @@ abstract class ArticlesDao {
     @Query("SELECT * FROM articles ORDER BY articleId DESC")
     abstract fun getAllArticles(): Flow<List<CachedArticleWithImages>>
 
+    @Transaction
+    @Query("SELECT * FROM articles where articleId = :id")
+    abstract fun getArticleById(id: Long): Flow<CachedArticleWithImages>
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     abstract suspend fun insertArticle(vararg article: CachedArticle)
 

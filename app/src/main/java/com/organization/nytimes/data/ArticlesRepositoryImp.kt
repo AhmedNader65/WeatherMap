@@ -44,4 +44,12 @@ class ArticlesRepositoryImp @Inject constructor(
                 articlesList.map { it.toDomain() }
             }
     }
+
+    override fun getArticle(id: Long): Flow<Article> {
+        return cache.getArticle(id)
+            .distinctUntilChanged()
+            .map{
+                it.toDomain()
+            }
+    }
 }

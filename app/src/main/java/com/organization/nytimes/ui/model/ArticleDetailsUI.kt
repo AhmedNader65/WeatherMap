@@ -5,19 +5,23 @@ import com.organization.nytimes.domain.model.Article
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-class ArticleUI(
+class ArticleDetailsUI(
     val id: Long,
     val title: String,
-    val thumbnail: String,
+    val abstract: String,
+    val caption: String,
+    val image: String,
     val publishDate: String,
     val byLine: String
 ) : Parcelable {
     companion object {
-        fun fromDomain(article: Article): ArticleUI {
-            return ArticleUI(
+        fun fromDomain(article: Article): ArticleDetailsUI {
+            return ArticleDetailsUI(
                 article.id,
                 article.title,
-                article.getSmallestImage(),
+                article.abstract,
+                article.caption,
+                article.getBiggestImage(),
                 article.published_date,
                 article.byline
             )

@@ -9,6 +9,8 @@ interface Cache {
 
     fun getArticles(): Flow<List<CachedArticleWithImages>>
 
+    fun getArticle(id: Long): Flow<CachedArticleWithImages>
+
     suspend fun storeArticles(vararg articles: CachedArticle)
 
     suspend fun storeImage(vararg images: CachedImage)

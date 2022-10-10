@@ -2,6 +2,7 @@
 
 buildscript {
     ext {
+        compose_version = '1.2.1'
         timber_version = '5.0.1'
         hilt_version = '2.42'
         nav_version = '2.5.2'
@@ -11,6 +12,7 @@ buildscript {
         androidXTestCoreVersion = '1.4.0'
         robolectricVersion = '4.8'
         room_version = '2.4.3'
+        composeNavigationVersion = '2.5.2'
     }
 }
 plugins {
