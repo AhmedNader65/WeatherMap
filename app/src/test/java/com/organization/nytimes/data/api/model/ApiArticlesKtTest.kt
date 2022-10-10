@@ -58,6 +58,7 @@ class ApiArticlesKtTest {
             "By David Gelles",
             "Billionaire No More: Patagonia Founder Gives Away the Company",
             "Yvon Chouinard has forfeited ownership of the company he founded 49 years ago. The profits will now be used to fight climate change.",
+            "",
             articleToTest.media?.first()?.`media-metadata`?.map { it.mapToDomain() }.orEmpty()
         )
 

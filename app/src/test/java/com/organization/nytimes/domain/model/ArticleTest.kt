@@ -21,7 +21,7 @@ class ArticleTest {
     @Test
     fun getSmallestAvailablePhoto() {
         // Given
-        val article = Article(1, "", "", "", "", "", "", listOf(thumbnail, medium))
+        val article = Article(1, "", "", "", "", "", "", "",listOf(thumbnail, medium))
         val expectedValue = thumbnail.url
         // When
         val smallestPhoto = article.getSmallestImage()
@@ -33,11 +33,34 @@ class ArticleTest {
     fun getSmallestAvailablePhoto_noSmallPhoto_returnsMedium() {
         // Given
 
-        val article = Article(1, "", "", "", "", "", "", listOf(medium))
+        val article = Article(1, "", "", "", "", "", "","", listOf(medium))
         val expectedValue = medium.url
 //        // When
         val smallestPhoto = article.getSmallestImage()
 //        // Then
         assertEquals(expectedValue, smallestPhoto)
     }
+
+
+    @Test
+    fun getBiggestAvailablePhoto() {
+        // Given
+        val article = Article(1, "", "", "", "", "", "","", listOf(thumbnail, medium))
+        val expectedValue = medium.url
+        // When
+        val biggestPhoto = article.getBiggestImage()
+        // Then
+        assertEquals(expectedValue,biggestPhoto)
+    }
+    @Test
+    fun getBiggestAvailablePhoto_noMediumPhoto_returnsThumbnail() {
+        // Given
+        val article = Article(1, "", "", "", "", "", "","", listOf(thumbnail))
+        val expectedValue = thumbnail.url
+        // When
+        val biggestPhoto = article.getBiggestImage()
+        // Then
+        assertEquals(expectedValue,biggestPhoto)
+    }
+
 }

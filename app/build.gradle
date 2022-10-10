@@ -80,6 +80,7 @@ dependencies {
     // AndroidX Test - JVM testing
     testImplementation "androidx.test:core-ktx:$androidXTestCoreVersion"
     testImplementation "org.robolectric:robolectric:$robolectricVersion"
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
 
 
     // DI
