@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -24,6 +25,7 @@ import com.organization.nytimes.R
 import com.organization.nytimes.ui.model.ArticleDetailsUI
 import com.organization.nytimes.ui.model.ArticleUI
 
+const val ARTICLE_DETAILS_TEST_TAG = "article_details"
 
 @Composable
 fun ArticleDetailsScreen(
@@ -37,7 +39,7 @@ fun ArticleDetailsScreen(
         val articleUI by viewModel.article.collectAsState()
         articleUI?.let { item ->
             Column(
-                modifier = Modifier
+                modifier = Modifier.testTag(ARTICLE_DETAILS_TEST_TAG)
                     .verticalScroll(rememberScrollState())
             ) {
 

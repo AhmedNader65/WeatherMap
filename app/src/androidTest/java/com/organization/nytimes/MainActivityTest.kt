@@ -18,6 +18,7 @@ import com.organization.nytimes.data.FakeRepository
 import com.organization.nytimes.data.di.CacheModule
 import com.organization.nytimes.data.di.DataModule
 import com.organization.nytimes.domain.repository.ArticlesRepository
+import com.organization.nytimes.ui.main.ARTICLE_DETAILS_TEST_TAG
 import com.organization.nytimes.ui.main.ARTICLE_LIST_TEST_TAG
 import com.organization.nytimes.ui.main.ArticlesScreen
 import com.organization.nytimes.ui.main.MainActivity
@@ -73,4 +74,23 @@ class MainActivityTest {
         }
     }
 
+    @Test
+    fun testNavigation_onItemClick_opensDetails() {
+        runBlocking {
+            repository.storeArticles(repository.requestArticles("", 7))
+            composeRule
+                .onNodeWithTag(testTag = ARTICLE_LIST_TEST_TAG)
+                .onChildren().onFirst().assert(hasText(repository.localArticles.first().title))
+        }
+        val device = UiDevice.getInstance(getInstrumentation())
+
+        val lazyColumn: UiObject2 = device.findObject(
+            By.res(ARTICLE_LIST_TEST_TAG)
+        )
+        lazyColumn.children[0].click()
+        composeRule
+            .onNodeWithTag(testTag = ARTICLE_DETAILS_TEST_TAG)
+            .onChildren().assertAny(hasText(repository.localArticles.first().title))
+
+    }
 }
