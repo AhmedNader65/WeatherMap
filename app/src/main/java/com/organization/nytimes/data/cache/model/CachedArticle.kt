@@ -30,5 +30,21 @@ data class CachedArticle(
                 article.abstract,
             )
         }
+
     }
+}
+
+fun CachedArticle.toDomain(): Article {
+
+    return Article(
+        articleId,
+        url,
+        published_date,
+        updated,
+        byline,
+        title,
+        abstract,
+        caption,
+        listOf()
+    )
 }

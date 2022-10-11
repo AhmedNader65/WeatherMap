@@ -12,8 +12,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.testTagsAsResourceId
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
@@ -36,6 +39,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@OptIn(ExperimentalComposeUiApi::class)
 @Composable
 private fun myApp() {
     val scaffoldState = rememberScaffoldState()
@@ -45,6 +49,9 @@ private fun myApp() {
     val currentScreen =
         appScreens.find { it.route == currentDestination?.route } ?: AllArticles
     Scaffold(
+        modifier = Modifier.semantics {
+            testTagsAsResourceId = true
+        },
         topBar = {
             TopAppBar(
                 title = { Text(currentScreen.title) }

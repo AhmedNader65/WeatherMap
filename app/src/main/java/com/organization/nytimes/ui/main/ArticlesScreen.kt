@@ -33,7 +33,7 @@ import com.organization.nytimes.ui.theme.divider_color
 import dagger.hilt.android.AndroidEntryPoint
 
 typealias OnArticleItemClicked = (ArticleUI) -> Unit
-
+const val ARTICLE_LIST_TEST_TAG = "articles_list"
 @Composable
 fun ArticlesScreen(
     onArticleItemClicked: OnArticleItemClicked,
@@ -53,7 +53,7 @@ fun ArticlesScreen(
             articles?.let {
                 ArticlesList(
                     it,
-                    modifier = modifier,
+                    modifier = modifier.testTag(ARTICLE_LIST_TEST_TAG),
                     onArticleItemClicked = onArticleItemClicked,
                     listState = listState
                 )
