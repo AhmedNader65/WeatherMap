@@ -20,7 +20,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "com.organization.nytimes.HiltTestRunner"
         buildConfigField("String", "API_KEY", apikeyProperties['API_KEY'])
     }
     // to give  unit tests to all the resources, assets and manifests.
