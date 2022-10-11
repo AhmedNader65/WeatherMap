@@ -11,7 +11,7 @@ import com.organization.nytimes.data.cache.model.CachedImage
     entities = [
         CachedArticle::class, CachedImage::class
     ],
-    version = 3
+    version = 1
 )
 abstract class ArticlesDatabase : RoomDatabase() {
     abstract fun articlesDao(): ArticlesDao
