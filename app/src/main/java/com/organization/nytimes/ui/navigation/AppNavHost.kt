@@ -40,9 +40,9 @@ fun AppNavHost(
         ) { navBackStackEntry ->
             val article =
                 if (Build.VERSION.SDK_INT >= 33) {
-                    navBackStackEntry.arguments?.getParcelable(articleKey, ArticleUI::class.java)
+                    navBackStackEntry.arguments?.getSerializable(articleKey, ArticleUI::class.java)
                 } else {
-                    navBackStackEntry.arguments?.getParcelable(articleKey) as ArticleUI?
+                    navBackStackEntry.arguments?.getSerializable(articleKey) as ArticleUI?
                 }
             article?.let {
                 val viewModel = hiltViewModel<ArticlesViewModel>()
@@ -55,7 +55,7 @@ fun AppNavHost(
 
 private fun NavHostController.navigateToSingleArticle(articleUI: ArticleUI) {
     this.navigatee(route = ArticleDetails.route, Bundle().apply {
-        this.putParcelable(articleKey, articleUI)
+        this.putSerializable(articleKey, articleUI)
     })
 }
 

@@ -4,7 +4,6 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
-    id 'kotlin-parcelize'
     id 'dagger.hilt.android.plugin'
 }
 
@@ -72,12 +71,13 @@ dependencies {
     // Testing
     androidTestImplementation Libs.Compose.uiTestJUnit4
     androidTestImplementation Libs.Testing.uiAutomator
-    testImplementation Libs.Testing.jUnit
     androidTestImplementation Libs.Testing.rules
-
-    testImplementation Libs.Testing.junitKtx
-    testImplementation Libs.Testing.robolectric
     androidTestImplementation Libs.Testing.mockWebServer
+
+    testImplementation Libs.Compose.coroutinesTest
+    testImplementation Libs.Testing.jUnit
+    testImplementation Libs.Testing.junitKtx
+    testImplementation Libs.Testing.mockito
     testImplementation Libs.Testing.mockWebServer
 
 

@@ -1,10 +1,8 @@
 package com.organization.nytimes.ui.model
 
-import android.os.Parcelable
 import com.organization.nytimes.domain.model.Article
-import kotlinx.android.parcel.Parcelize
+import java.io.Serializable
 
-@Parcelize
 class ArticleDetailsUI(
     val id: Long,
     val title: String,
@@ -13,7 +11,7 @@ class ArticleDetailsUI(
     val image: String,
     val publishDate: String,
     val byLine: String
-) : Parcelable {
+) : Serializable {
     companion object {
         fun fromDomain(article: Article): ArticleDetailsUI {
             return ArticleDetailsUI(

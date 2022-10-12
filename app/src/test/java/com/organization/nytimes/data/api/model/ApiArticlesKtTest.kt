@@ -13,7 +13,6 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 
-@RunWith(AndroidJUnit4::class)
 class ApiArticlesKtTest {
     lateinit var apiResponse: ApiContainer
 
@@ -39,7 +38,7 @@ class ApiArticlesKtTest {
         )
         // WHEN
         val result =
-            articleToTest.media?.first()?.`media-metadata`?.map { it.mapToDomain() }?.first()
+            articleToTest.media?.firstOrNull()?.`media-metadata`?.map { it.mapToDomain() }?.first()
 
         // THEN
         assertEquals(expectedValue, result)
@@ -59,7 +58,7 @@ class ApiArticlesKtTest {
             "Billionaire No More: Patagonia Founder Gives Away the Company",
             "Yvon Chouinard has forfeited ownership of the company he founded 49 years ago. The profits will now be used to fight climate change.",
             "",
-            articleToTest.media?.first()?.`media-metadata`?.map { it.mapToDomain() }.orEmpty()
+            articleToTest.media?.firstOrNull()?.`media-metadata`?.map { it.mapToDomain() }.orEmpty()
         )
 
         // WHEN
