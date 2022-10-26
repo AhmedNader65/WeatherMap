@@ -2,14 +2,14 @@ package com.organization.nytimes.data
 
 import androidx.room.Room
 import androidx.test.platform.app.InstrumentationRegistry
-import com.organization.nytimes.data.api.ArticlesApi
+import com.organization.nytimes.data.api.WeatherApi
 import com.organization.nytimes.data.api.utils.FakeServer
-import com.organization.nytimes.data.cache.ArticlesDatabase
+import com.organization.nytimes.data.cache.WeatherDatabase
 import com.organization.nytimes.data.cache.Cache
 import com.organization.nytimes.data.cache.RoomCache
-import com.organization.nytimes.data.cache.daos.ArticlesDao
+import com.organization.nytimes.data.cache.daos.WeatherDao
 import com.organization.nytimes.data.di.CacheModule
-import com.organization.nytimes.domain.repository.ArticlesRepository
+import com.organization.nytimes.domain.repository.WeatherRepository
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
@@ -21,7 +21,6 @@ import dagger.hilt.components.SingletonComponent
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 import org.junit.After
-import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Rule
 
@@ -38,8 +37,8 @@ import javax.inject.Singleton
 class ArticlesRepositoryImpTest {
 
     private val fakeServer = FakeServer()
-    private lateinit var repository: ArticlesRepository
-    private lateinit var api: ArticlesApi
+    private lateinit var repository: WeatherRepository
+    private lateinit var api: WeatherApi
 
     @get:Rule
     var hiltRule = HiltAndroidRule(this)
@@ -47,7 +46,7 @@ class ArticlesRepositoryImpTest {
     lateinit var cache: Cache
 
     @Inject
-    lateinit var database: ArticlesDatabase
+    lateinit var database: WeatherDatabase
 
     @Inject
     lateinit var retrofitBuilder: Retrofit.Builder
@@ -62,18 +61,18 @@ class ArticlesRepositoryImpTest {
 
             @Provides
             @Singleton
-            fun provideRoomDatabase(): ArticlesDatabase {
+            fun provideRoomDatabase(): WeatherDatabase {
                 return Room.inMemoryDatabaseBuilder(
                     InstrumentationRegistry.getInstrumentation().context,
-                    ArticlesDatabase::class.java
+                    WeatherDatabase::class.java
                 )
                     .allowMainThreadQueries()
                     .build()
             }
             @Provides
             fun provideArticlesDao(
-                articleDatabase: ArticlesDatabase
-            ): ArticlesDao = articleDatabase.articlesDao()
+                articleDatabase: WeatherDatabase
+            ): WeatherDao = articleDatabase.weatherDao()
         }
 
     }
@@ -87,11 +86,11 @@ class ArticlesRepositoryImpTest {
         api = retrofitBuilder
             .baseUrl(fakeServer.baseEndpoint)
             .build()
-            .create(ArticlesApi::class.java)
+            .create(WeatherApi::class.java)
 
-        cache = RoomCache(database.articlesDao())
+        cache = RoomCache(database.weatherDao())
 
-        repository = ArticlesRepositoryImp(
+        repository = WeatherRepositoryImp(
             cache,
             api
         )
@@ -103,7 +102,7 @@ class ArticlesRepositoryImpTest {
         val expectedArticleId = 100000008485792L
         fakeServer.setHappyPathDispatcher()
         // When
-        val resultArticles = repository.requestArticles("all-sections",7)
+        val resultArticles = repository.requestWeather("all-sections",7)
         // Then
         val product = resultArticles.first()
         assert(product.id == expectedArticleId)
@@ -115,11 +114,11 @@ class ArticlesRepositoryImpTest {
         val expectedArticleId = 100000008565706L
         runBlocking {
             fakeServer.setHappyPathDispatcher()
-            val resultArticles = repository.requestArticles("all-sections",7)
+            val resultArticles = repository.requestWeather("all-sections",7)
             // When
-            repository.storeArticles(resultArticles)
+            repository.storeWeather(resultArticles)
             // Then
-            val insertedValue = repository.getArticles().first()
+            val insertedValue = repository.getWeather().first()
             assert(insertedValue[0].id == expectedArticleId)
         }
     }

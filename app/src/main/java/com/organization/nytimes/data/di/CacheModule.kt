@@ -2,10 +2,10 @@ package com.organization.nytimes.data.di
 
 import android.content.Context
 import androidx.room.Room
-import com.organization.nytimes.data.cache.ArticlesDatabase
+import com.organization.nytimes.data.cache.WeatherDatabase
 import com.organization.nytimes.data.cache.Cache
 import com.organization.nytimes.data.cache.RoomCache
-import com.organization.nytimes.data.cache.daos.ArticlesDao
+import com.organization.nytimes.data.cache.daos.WeatherDao
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
@@ -27,10 +27,10 @@ abstract class CacheModule {
         @Singleton
         fun provideDatabase(
             @ApplicationContext context: Context
-        ): ArticlesDatabase {
+        ): WeatherDatabase {
             return Room.databaseBuilder(
                 context,
-                ArticlesDatabase::class.java,
+                WeatherDatabase::class.java,
                 "articles.db"
             ).fallbackToDestructiveMigration()
                 .build()
@@ -38,8 +38,8 @@ abstract class CacheModule {
 
         @Provides
         fun provideArticlesDao(
-            articlesDatabase: ArticlesDatabase
-        ): ArticlesDao = articlesDatabase.articlesDao()
+            articlesDatabase: WeatherDatabase
+        ): WeatherDao = articlesDatabase.weatherDao()
 
     }
 }

@@ -1,7 +1,7 @@
 package com.organization.nytimes.data.di
 
-import com.organization.nytimes.data.ArticlesRepositoryImp
-import com.organization.nytimes.domain.repository.ArticlesRepository
+import com.organization.nytimes.data.WeatherRepositoryImp
+import com.organization.nytimes.domain.repository.WeatherRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -15,6 +15,6 @@ abstract class DataModule {
 
     @Binds
     @ActivityRetainedScoped
-    abstract fun bindArticlesRepository(repository: ArticlesRepositoryImp): ArticlesRepository
+    abstract fun bindArticlesRepository(repository: WeatherRepositoryImp): WeatherRepository
 
 }

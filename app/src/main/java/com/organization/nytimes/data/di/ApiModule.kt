@@ -2,7 +2,7 @@ package com.organization.nytimes.data.di
 
 
 import com.organization.nytimes.data.api.ApiConstants
-import com.organization.nytimes.data.api.ArticlesApi
+import com.organization.nytimes.data.api.WeatherApi
 import com.organization.nytimes.data.api.interceptors.LoggingInterceptor
 import com.organization.nytimes.data.api.interceptors.NetworkStatusInterceptor
 import dagger.Module
@@ -21,10 +21,10 @@ object ApiModule {
 
     @Provides
     @Singleton
-    fun provideApi(builder: Retrofit.Builder): ArticlesApi {
+    fun provideApi(builder: Retrofit.Builder): WeatherApi {
         return builder
             .build()
-            .create(ArticlesApi::class.java)
+            .create(WeatherApi::class.java)
     }
 
     @Provides

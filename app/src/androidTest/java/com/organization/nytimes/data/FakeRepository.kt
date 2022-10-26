@@ -1,6 +1,5 @@
 package com.organization.nytimes.data
 
-import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
 import com.organization.nytimes.data.api.model.ApiContainer
@@ -9,12 +8,12 @@ import com.organization.nytimes.data.cache.model.CachedArticle
 import com.organization.nytimes.data.cache.model.toDomain
 import com.organization.nytimes.data.utils.JsonReader
 import com.organization.nytimes.domain.model.Article
-import com.organization.nytimes.domain.repository.ArticlesRepository
+import com.organization.nytimes.domain.repository.WeatherRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
-class FakeRepository @Inject constructor() : ArticlesRepository {
+class FakeRepository @Inject constructor() : WeatherRepository {
     var apiResponse: ApiContainer
 
     init {
@@ -26,16 +25,16 @@ class FakeRepository @Inject constructor() : ArticlesRepository {
 
     val localArticles: List<CachedArticle> get() = mutableLocalArticles
     private val mutableLocalArticles = mutableListOf<CachedArticle>()
-    override suspend fun requestArticles(section: String, period: Int): List<Article> {
+    override suspend fun requestWeather(section: String, period: Int): List<Article> {
 
         return apiResponse.articles.map { it.mapToDomain() }
     }
 
-    override suspend fun storeArticles(articles: List<Article>) {
+    override suspend fun storeWeather(articles: List<Article>) {
         mutableLocalArticles.addAll(articles.map { CachedArticle.fromDomain(it) })
     }
 
-    override fun getArticles(): Flow<List<Article>> {
+    override fun getWeather(): Flow<List<Article>> {
         return flow {
             emit(localArticles.map { it.toDomain() })
         }

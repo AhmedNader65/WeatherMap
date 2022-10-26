@@ -8,7 +8,7 @@ import androidx.test.uiautomator.UiDevice
 import androidx.test.uiautomator.UiObject2
 import com.organization.nytimes.data.FakeRepository
 import com.organization.nytimes.data.di.DataModule
-import com.organization.nytimes.domain.repository.ArticlesRepository
+import com.organization.nytimes.domain.repository.WeatherRepository
 import com.organization.nytimes.ui.main.ARTICLE_DETAILS_TEST_TAG
 import com.organization.nytimes.ui.main.ARTICLE_LIST_TEST_TAG
 import com.organization.nytimes.ui.main.MainActivity
@@ -44,7 +44,7 @@ class MainActivityTest {
     abstract class DataModule {
         @Binds
         @ActivityRetainedScoped
-        abstract fun bindArticlesRepository(repository: FakeRepository): ArticlesRepository
+        abstract fun bindArticlesRepository(repository: FakeRepository): WeatherRepository
     }
 
     @Inject
@@ -58,7 +58,7 @@ class MainActivityTest {
     @Test
     fun testFirstItemInTheList_displayingFirstArticle() {
         runBlocking {
-            repository.storeArticles(repository.requestArticles("", 7))
+            repository.storeWeather(repository.requestWeather("", 7))
             composeRule
                 .onNodeWithTag(testTag = ARTICLE_LIST_TEST_TAG)
                 .onChildren().onFirst().assert(hasText(repository.localArticles.first().title))
@@ -68,7 +68,7 @@ class MainActivityTest {
     @Test
     fun testNavigation_onItemClick_opensDetails() {
         runBlocking {
-            repository.storeArticles(repository.requestArticles("", 7))
+            repository.storeWeather(repository.requestWeather("", 7))
             composeRule
                 .onNodeWithTag(testTag = ARTICLE_LIST_TEST_TAG)
                 .onChildren().onFirst().assert(hasText(repository.localArticles.first().title))
