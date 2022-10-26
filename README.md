@@ -1,6 +1,6 @@
-# NY-Times-News
+# WeatherMap
 
-## NY Times News app as POC 
+## WeatherMap app as POC 
 
 
 ## Clean architecture with 3 layers
