@@ -5,13 +5,15 @@ import java.io.Serializable
 
 
 class ForecastUI(
-    val date: String,
+    val dateFormatted: String,
+    val date: Long,
     val weather: String,
 ) : Serializable {
     companion object {
         fun fromDomain(forecast: Forecast): ForecastUI {
             return ForecastUI(
                 forecast.formattedDate,
+                forecast.date,
                 forecast.weather
             )
         }

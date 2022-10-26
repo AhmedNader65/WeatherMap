@@ -8,4 +8,6 @@ object ApiConstants {
 object ApiParameters {
     const val API_KEY = "appid"
     const val CITY_QUERY = "q"
+    const val UNIT_QUERY = "units"
+    const val UNIT_CELSIUS  = "metric"
 }

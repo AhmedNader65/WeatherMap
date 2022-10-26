@@ -45,6 +45,6 @@ private fun myApp() {
         },
         scaffoldState = scaffoldState,
         content = { innerPadding ->
-            WeatherScreen({}, modifier = Modifier.padding(innerPadding))
+            WeatherScreen(modifier = Modifier.padding(innerPadding))
         })
 }

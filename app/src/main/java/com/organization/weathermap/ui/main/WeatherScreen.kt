@@ -42,11 +42,14 @@ fun WeatherScreen(
             Box(modifier = Modifier) {
 
                 forecastUIList?.let {
-                    ForecastList(
-                        it,
-                        modifier = modifier.testTag(WEATHER_LIST_TEST_TAG),
-                        listState = listState
-                    )
+                    Column {
+                        Text(it.first { it.date > System.currentTimeMillis() }.weather)
+                        ForecastList(
+                            it,
+                            modifier = modifier.testTag(WEATHER_LIST_TEST_TAG),
+                            listState = listState
+                        )
+                    }
                 } ?: run {
                     Box(
                         modifier = Modifier.width(48.dp).align(Alignment.Center)
@@ -134,7 +137,7 @@ private fun ForecastItem(
         Column(modifier = Modifier.padding(start = 12.dp)) {
 
             Text(
-                text = item.date,
+                text = item.dateFormatted,
                 style = MaterialTheme.typography.body1
             )
             Row(
@@ -153,7 +156,7 @@ private fun ForecastItem(
                     tint = Color.Gray
                 )
                 Text(
-                    color = Color.Gray, text = item.date
+                    color = Color.Gray, text = item.dateFormatted
                 )
             }
         }
@@ -167,6 +170,8 @@ fun ForecastItemPreview() {
     ForecastItem(
         ForecastUI(
             "15-10-2022 13:4",
+            1234546L,
             "Biden Pardons Thousands Convicted of Marijuana Possession Under Federal Law",
-        ))
+        )
+    )
 }
