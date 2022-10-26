@@ -1,12 +1,13 @@
-import com.organization.nytimes.buildsrc.Libs
+import com.organization.weathermap.buildsrc.Libs
 
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
-    id 'kotlin-parcelize'
     id 'dagger.hilt.android.plugin'
 }
+
+apply from: "$project.rootDir/jacoco.gradle"
 
 def apikeyPropertiesFile = rootProject.file("apikey.properties")
 def apikeyProperties = new Properties()
@@ -16,7 +17,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.organization.nytimes"
+        applicationId "com.organization.weathermap"
         minSdk 21
         targetSdk 33
         versionCode 1
@@ -32,6 +33,11 @@ android {
         }
     }
     buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            minifyEnabled false
+            testCoverageEnabled true
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -72,12 +78,13 @@ dependencies {
     // Testing
     androidTestImplementation Libs.Compose.uiTestJUnit4
     androidTestImplementation Libs.Testing.uiAutomator
-    testImplementation Libs.Testing.jUnit
     androidTestImplementation Libs.Testing.rules
-
-    testImplementation Libs.Testing.junitKtx
-    testImplementation Libs.Testing.robolectric
     androidTestImplementation Libs.Testing.mockWebServer
+
+    testImplementation Libs.Compose.coroutinesTest
+    testImplementation Libs.Testing.jUnit
+    testImplementation Libs.Testing.junitKtx
+    testImplementation Libs.Testing.mockito
     testImplementation Libs.Testing.mockWebServer
 
 

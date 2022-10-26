@@ -1,4 +1,4 @@
-package com.organization.nytimes.buildsrc
+package com.organization.weathermap.buildsrc
 
 object Versions {
     const val ktLint = "0.45.2"
@@ -7,15 +7,18 @@ object Versions {
     const val hilt_compose_navigation = "1.0.0"
     const val navigation = "2.5.2"
     const val compose = "1.2.1"
+    const val coroutinesTest = "1.6.4"
     const val composeActivity = "1.6.0"
     const val composeViewModel = "2.5.1"
     const val composeCoil = "2.1.0"
     const val uiAutomator = "2.2.0"
     const val junit = "4.13.2"
     const val junitKtx = "1.1.3"
+    const val mockito = "4.8.0"
     const val robolectric = "4.8"
     const val rules = "1.4.0"
     const val mockWebServer = "4.9.3"
+    const val mockk = "1.13.2"
     const val gson = "2.9.0"
     const val retrofit = "2.9.0"
     const val okhttp = "4.9.3"
@@ -53,6 +56,7 @@ object Libs {
         const val uiTooling = "androidx.compose.ui:ui-tooling:${Versions.compose}"
         const val uiTestManifest = "androidx.compose.ui:ui-test-manifest:${Versions.compose}"
         const val uiTestJUnit4 = "androidx.compose.ui:ui-test-junit4:${Versions.compose}"
+        const val coroutinesTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutinesTest}"
 
         const val activity = "androidx.activity:activity-compose:${Versions.composeActivity}"
 
@@ -68,6 +72,7 @@ object Libs {
         const val jUnit = "junit:junit:${Versions.junit}"
         const val rules = "androidx.test:rules:${Versions.rules}"
         const val junitKtx = "androidx.test.ext:junit-ktx:${Versions.junitKtx}"
+        const val mockito = "org.mockito:mockito-core:${Versions.mockito}"
         const val robolectric = "org.robolectric:robolectric:${Versions.robolectric}"
         const val mockWebServer = "com.squareup.okhttp3:mockwebserver:${Versions.mockWebServer}"
     }
