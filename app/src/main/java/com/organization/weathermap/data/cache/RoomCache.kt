@@ -15,6 +15,8 @@ class RoomCache @Inject constructor(
 
     override suspend fun storeCity(city: CachedCity) = weatherDao.insertCity(city)
 
-    override suspend fun storeForecast(vararg forecast: CachedForecast) =
-        weatherDao.insertForecast(*forecast)
+    override suspend fun storeForecast(vararg forecast: CachedForecast) {
+        weatherDao.deleteByCity(forecast.first().cityId)
+        return weatherDao.insertForecast(*forecast)
+    }
 }

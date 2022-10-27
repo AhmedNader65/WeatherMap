@@ -11,7 +11,7 @@ import com.organization.weathermap.data.cache.model.CachedForecast
     entities = [
         CachedCity::class, CachedForecast::class
     ],
-    version = 2
+    version = 3
 )
 abstract class WeatherDatabase : RoomDatabase() {
     abstract fun weatherDao(): WeatherDao

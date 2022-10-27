@@ -38,11 +38,6 @@ private fun myApp() {
         modifier = Modifier.semantics {
             testTagsAsResourceId = true
         },
-        topBar = {
-            TopAppBar(
-                title = { Text("Hello") }
-            )
-        },
         scaffoldState = scaffoldState,
         content = { innerPadding ->
             WeatherScreen(modifier = Modifier.padding(innerPadding))

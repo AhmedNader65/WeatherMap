@@ -7,6 +7,7 @@ import com.organization.weathermap.data.cache.model.CachedCity
 import com.organization.weathermap.data.cache.model.CachedForecast
 import com.organization.weathermap.data.cache.model.toDomain
 import com.organization.weathermap.domain.model.City
+import com.organization.weathermap.domain.model.CityNotFoundException
 import com.organization.weathermap.domain.model.NetworkException
 import com.organization.weathermap.domain.repository.WeatherRepository
 import kotlinx.coroutines.flow.Flow
@@ -24,6 +25,8 @@ class WeatherRepositoryImp @Inject constructor(
             val results = api.getForecast(city = city)
             return results.mapToDomain()
         } catch (exception: HttpException) {
+            if (exception.code() == 404)
+                throw CityNotFoundException()
             throw NetworkException(exception.message ?: "Code ${exception.code()}")
         }
     }
@@ -34,7 +37,7 @@ class WeatherRepositoryImp @Inject constructor(
             .toTypedArray())
     }
 
-    override fun getWeather(name:String): Flow<City> =
+    override fun getWeather(name: String): Flow<City> =
         cache.getForecast(name).distinctUntilChanged().map {
             it.toDomain()
         }

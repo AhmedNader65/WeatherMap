@@ -15,4 +15,7 @@ abstract class WeatherDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     abstract suspend fun insertForecast(vararg cachedForecast: CachedForecast)
+
+    @Query("DELETE FROM forecast WHERE cityId = :cityId")
+    abstract suspend fun deleteByCity(cityId: Long?)
 }

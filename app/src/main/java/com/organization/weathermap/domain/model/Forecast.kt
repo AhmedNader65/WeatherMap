@@ -25,6 +25,7 @@ data class Forecast(
     val humidity: String,
     val temp_kf: String,
     val weather: String,
+    val icon: String,
     val cloud: String,
     val windSpeed: String,
     val visibility: Int,

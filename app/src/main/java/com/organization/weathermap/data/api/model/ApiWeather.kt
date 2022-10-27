@@ -19,7 +19,7 @@ fun List<ApiWeatherContainer>.mapToDomain(): List<Forecast> {
         Forecast(
             it.dt ?: System.currentTimeMillis(),
             it.dt_txt.orEmpty(),
-            it.main?.temp.orEmpty(),
+            it.main?.temp?.toInt().toString(),
             it.main?.feels_like.orEmpty(),
             it.main?.temp_min.orEmpty(),
             it.main?.temp_max.orEmpty(),
@@ -29,6 +29,7 @@ fun List<ApiWeatherContainer>.mapToDomain(): List<Forecast> {
             it.main?.humidity.orEmpty(),
             it.main?.temp_kf.orEmpty(),
             it.weather?.first()?.description.orEmpty(),
+            it.weather?.first()?.icon.orEmpty(),
             it.clouds?.all.orEmpty(),
             it.wind?.speed.orEmpty(),
             it.visibility ?: 0
@@ -37,7 +38,7 @@ fun List<ApiWeatherContainer>.mapToDomain(): List<Forecast> {
 }
 
 data class ApiMain(
-    val temp: String?,
+    val temp: Float?,
     val feels_like: String?,
     val temp_min: String?,
     val temp_max: String?,
