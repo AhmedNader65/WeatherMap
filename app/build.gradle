@@ -23,7 +23,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "com.organization.nytimes.HiltTestRunner"
+        testInstrumentationRunner "com.organization.weathermap.HiltTestRunner"
         buildConfigField("String", "API_KEY", apikeyProperties['API_KEY'])
     }
     // to give  unit tests to all the resources, assets and manifests.
@@ -80,6 +80,8 @@ dependencies {
     androidTestImplementation Libs.Testing.uiAutomator
     androidTestImplementation Libs.Testing.rules
     androidTestImplementation Libs.Testing.mockWebServer
+    androidTestImplementation  Libs.Testing.coreKtx
+    debugImplementation   Libs.Testing.coreKtx
 
     testImplementation Libs.Compose.coroutinesTest
     testImplementation Libs.Testing.jUnit

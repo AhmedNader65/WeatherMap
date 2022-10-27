@@ -34,7 +34,7 @@ import javax.inject.Singleton
 @UninstallModules(
     CacheModule::class
 )
-class ArticlesRepositoryImpTest {
+class WeatherRepositoryImpTest {
 
     private val fakeServer = FakeServer()
     private lateinit var repository: WeatherRepository
@@ -69,10 +69,11 @@ class ArticlesRepositoryImpTest {
                     .allowMainThreadQueries()
                     .build()
             }
+
             @Provides
-            fun provideArticlesDao(
-                articleDatabase: WeatherDatabase
-            ): WeatherDao = articleDatabase.weatherDao()
+            fun weatherDao(
+                weatherDatabase: WeatherDatabase
+            ): WeatherDao = weatherDatabase.weatherDao()
         }
 
     }
@@ -97,38 +98,40 @@ class ArticlesRepositoryImpTest {
     }
 
     @Test
-    fun requestArticles() = runBlocking {
+    fun requestForecast_returnsCorrectCity() = runBlocking {
         // Given
-        val expectedArticleId = 100000008485792L
+        val expectedCityId = 360630L
         fakeServer.setHappyPathDispatcher()
         // When
-        val resultArticles = repository.requestWeather("all-sections",7)
+        val resultCity = repository.requestWeather("Cairo")
         // Then
-        val product = resultArticles.first()
-        assert(product.id == expectedArticleId)
+        assert(expectedCityId == resultCity.id)
     }
 
     @Test
-    fun storeArticles() {
+    fun requestForecast_returnsCorrectWeather() = runBlocking {
         // Given
-        val expectedArticleId = 100000008565706L
+        val expectedTemp = "301"
+        fakeServer.setHappyPathDispatcher()
+        // When
+        val resultCity = repository.requestWeather("Cairo")
+        // Then
+        assert(expectedTemp == resultCity.weather.first().temp)
+    }
+
+    @Test
+    fun storeWeather() {
+        // Given
+        val expectedCityId = 360630L
         runBlocking {
             fakeServer.setHappyPathDispatcher()
-            val resultArticles = repository.requestWeather("all-sections",7)
+            val resultCity = repository.requestWeather("Cairo")
             // When
-            repository.storeWeather(resultArticles)
+            repository.storeWeather(resultCity)
             // Then
-            val insertedValue = repository.getWeather().first()
-            assert(insertedValue[0].id == expectedArticleId)
+            val insertedValue = repository.getWeather("Cairo").first()
+            assert(insertedValue.id == expectedCityId)
         }
-    }
-
-    @Test
-    fun getArticles() {
-    }
-
-    @Test
-    fun getArticle() {
     }
 
     @After

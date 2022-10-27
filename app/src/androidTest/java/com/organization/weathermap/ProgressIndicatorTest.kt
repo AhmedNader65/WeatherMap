@@ -1,11 +1,9 @@
 package com.organization.weathermap
 
 import androidx.compose.ui.semantics.ProgressBarRangeInfo
-import androidx.compose.ui.test.assertIsDisplayed
-import androidx.compose.ui.test.assertRangeInfoEquals
+import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import org.junit.Rule
-import androidx.compose.ui.test.onNodeWithTag
 import com.organization.weathermap.ui.main.MainActivity
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
@@ -28,6 +26,8 @@ class ProgressIndicatorTest {
     }
     @Test
     fun myTest() {
+        composeRule.onNodeWithText("Enter city name...").performTextInput("Cairo")
+        composeRule.onNodeWithText("Search").performClick()
         composeRule
             .onNodeWithTag(testTag = "myProgressIndicator")
             .assertIsDisplayed()

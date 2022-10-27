@@ -15,7 +15,7 @@ class FakeServer {
     private val mockWebServer = MockWebServer()
 
     private val endpointSeparator = "/"
-    private val articlesEndpointPath = endpointSeparator + ApiConstants.MOST_VIEWED_ENDPOINT
+    private val forecastEndpointPath = endpointSeparator + ApiConstants.FORECAST_ENDPOINT
 
     val baseEndpoint
         get() = mockWebServer.url(endpointSeparator)

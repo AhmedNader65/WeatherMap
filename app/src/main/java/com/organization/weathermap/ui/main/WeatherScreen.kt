@@ -37,10 +37,14 @@ const val WEATHER_LIST_TEST_TAG = "weather_list"
 
 @Composable
 fun WeatherScreen(
-    modifier: Modifier = Modifier, viewModel: WeatherViewModel = hiltViewModel()
+    modifier: Modifier = Modifier,
+    time: Long = System.currentTimeMillis() / 1000,
+    viewModel: WeatherViewModel = hiltViewModel(),
 ) {
     Surface(
-        modifier = modifier.fillMaxSize().padding(16.dp), color = MaterialTheme.colors.background
+        modifier = modifier
+            .fillMaxSize()
+            .padding(16.dp), color = MaterialTheme.colors.background
     ) {
         val listState = rememberLazyListState()
         var isLoading by rememberSaveable { mutableStateOf(false) }
@@ -58,7 +62,6 @@ fun WeatherScreen(
                 forecastUIList?.let {
                     isLoading = false
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        val time = System.currentTimeMillis() / 1000
                         val currentForecast = it.first { it.date > time }
                         if (isNotAccurate)
                             Text(
@@ -86,7 +89,9 @@ fun WeatherScreen(
                                 contentDescription = null,
                                 contentScale = ContentScale.Crop,
 
-                                modifier = Modifier.width(50.dp).height(50.dp)
+                                modifier = Modifier
+                                    .width(50.dp)
+                                    .height(50.dp)
                                     .clip(RoundedCornerShape(8.dp)),
                             )
                             Text(
@@ -102,11 +107,16 @@ fun WeatherScreen(
                 } ?: run {
 
                     Box(
-                        modifier = Modifier.fillMaxWidth().align(Alignment.Center).height(48.dp)
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .align(Alignment.Center)
+                            .height(48.dp)
                     ) {
                         if (isLoading)
                             CircularProgressIndicator(
-                                modifier = Modifier.width(48.dp).testTag("myProgressIndicator")
+                                modifier = Modifier
+                                    .width(48.dp)
+                                    .testTag("myProgressIndicator")
                             )
 
                         if (error.first) {
@@ -130,7 +140,9 @@ fun SearchBox(
     var text by remember { mutableStateOf(TextFieldValue("")) }
     Column(modifier = modifier.fillMaxWidth()) {
         TextField(value = text,
-            modifier = Modifier.fillMaxWidth().heightIn(min = 56.dp),
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(min = 56.dp),
             leadingIcon = {
                 Icon(
                     imageVector = Icons.Default.Search, contentDescription = null
@@ -181,7 +193,11 @@ private fun ForecastItem(
     ) {
 
         Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-            Column(modifier = Modifier.weight(1f).padding(start = 12.dp)) {
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(start = 12.dp)
+            ) {
                 Text(
                     text = item.getRelativeDate(), style = MaterialTheme.typography.h6
                 )
@@ -200,7 +216,9 @@ private fun ForecastItem(
                         contentDescription = null,
                         contentScale = ContentScale.Crop,
 
-                        modifier = Modifier.width(50.dp).height(50.dp)
+                        modifier = Modifier
+                            .width(50.dp)
+                            .height(50.dp)
                             .clip(RoundedCornerShape(8.dp)),
                     )
                     Text(
