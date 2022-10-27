@@ -9,7 +9,7 @@ data class City(
     val lng: Double,
     val sunrise: Long,
     val sunset: Long,
-    val weather: List<Forecast>
+    var weather: List<Forecast>
 )
 
 data class Forecast(

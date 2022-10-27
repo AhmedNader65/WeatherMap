@@ -1,77 +1,58 @@
 package com.organization.weathermap.data.utils
 
 object JsonReader {
-    fun getJson(path: String): String =
-        "{" +
-                "  \"status\": \"OK\"," +
-                "  \"copyright\": \"Copyright (c) 2022 The New York Times Company.  All Rights Reserved.\"," +
-                "  \"num_results\": 20," +
-                "  \"results\": [" +
-                "    {" +
-                "      \"uri\": \"nyt://article/6b915b80-14bb-5063-b0ec-2505eb55fc0d\"," +
-                "      \"url\": \"https://www.nytimes.com/2022/09/14/climate/patagonia-climate-philanthropy-chouinard.html\"," +
-                "      \"id\": 100000008485792," +
-                "      \"asset_id\": 100000008485792," +
-                "      \"source\": \"New York Times\"," +
-                "      \"published_date\": \"2022-09-14\"," +
-                "      \"updated\": \"2022-09-21 18:05:13\"," +
-                "      \"section\": \"Climate\"," +
-                "      \"subsection\": \"\"," +
-                "      \"nytdsection\": \"climate\"," +
-                "      \"adx_keywords\": \"Global Warming;Philanthropy;Corporate Social Responsibility;High Net Worth Individuals;Capitalism (Theory and Philosophy);Content Type: Personal Profile;Fashion and Apparel;Mergers, Acquisitions and Divestitures;Chouinard, Yvon;Patagonia Inc\"," +
-                "      \"column\": null," +
-                "      \"byline\": \"By David Gelles\"," +
-                "      \"type\": \"Article\"," +
-                "      \"title\": \"Billionaire No More: Patagonia Founder Gives Away the Company\"," +
-                "      \"abstract\": \"Yvon Chouinard has forfeited ownership of the company he founded 49 years ago. The profits will now be used to fight climate change.\"," +
-                "      \"des_facet\": [" +
-                "        \"Global Warming\"," +
-                "        \"Philanthropy\"," +
-                "        \"Corporate Social Responsibility\"," +
-                "        \"High Net Worth Individuals\"," +
-                "        \"Capitalism (Theory and Philosophy)\"," +
-                "        \"Content Type: Personal Profile\"," +
-                "        \"Fashion and Apparel\"," +
-                "        \"Mergers, Acquisitions and Divestitures\"" +
-                "      ]," +
-                "      \"org_facet\": [" +
-                "        \"Patagonia Inc\"" +
-                "      ]," +
-                "      \"per_facet\": [" +
-                "        \"Chouinard, Yvon\"" +
-                "      ]," +
-                "      \"geo_facet\": []," +
-                "      \"media\": [" +
-                "        {" +
-                "          \"type\": \"image\"," +
-                "          \"subtype\": \"photo\"," +
-                "          \"caption\": \"\"," +
-                "          \"copyright\": \"Natalie Behring for The New York Times\"," +
-                "          \"approved_for_syndication\": 1," +
-                "          \"media-metadata\": [" +
-                "            {" +
-                "              \"url\": \"https://static01.nyt.com/images/2022/09/12/climate/00cli-patagonia-promo/00cli-patagonia-promo-thumbStandard.jpg\"," +
-                "              \"format\": \"Standard Thumbnail\"," +
-                "              \"height\": 75," +
-                "              \"width\": 75" +
-                "            }," +
-                "            {" +
-                "              \"url\": \"https://static01.nyt.com/images/2022/09/12/climate/00cli-patagonia-promo/00cli-patagonia-promo-mediumThreeByTwo210.jpg\"," +
-                "              \"format\": \"mediumThreeByTwo210\"," +
-                "              \"height\": 140," +
-                "              \"width\": 210" +
-                "            }," +
-                "            {" +
-                "              \"url\": \"https://static01.nyt.com/images/2022/09/12/climate/00cli-patagonia-promo/00cli-patagonia-promo-mediumThreeByTwo440.jpg\"," +
-                "              \"format\": \"mediumThreeByTwo440\"," +
-                "              \"height\": 293," +
-                "              \"width\": 440" +
-                "            }" +
-                "          ]" +
-                "        }" +
-                "      ]," +
-                "      \"eta_id\": 0" +
-                "    }" +
-                "  ]" +
-                "}"
+    fun getJson(path: String): String ="{\n" +
+            "  \"cod\": \"200\",\n" +
+            "  \"message\": 0,\n" +
+            "  \"cnt\": 40,\n" +
+            "  \"list\": [ {\n" +
+            "    \"dt\": 1666882800,\n" +
+            "    \"main\": {\n" +
+            "      \"temp\": 301.65,\n" +
+            "      \"feels_like\": 301.43,\n" +
+            "      \"temp_min\": 301.65,\n" +
+            "      \"temp_max\": 301.82,\n" +
+            "      \"pressure\": 1016,\n" +
+            "      \"sea_level\": 1016,\n" +
+            "      \"grnd_level\": 1013,\n" +
+            "      \"humidity\": 42,\n" +
+            "      \"temp_kf\": -0.17\n" +
+            "    },\n" +
+            "    \"weather\": [\n" +
+            "      {\n" +
+            "        \"id\": 803,\n" +
+            "        \"main\": \"Clouds\",\n" +
+            "        \"description\": \"broken clouds\",\n" +
+            "        \"icon\": \"04d\"\n" +
+            "      }\n" +
+            "    ],\n" +
+            "    \"clouds\": {\n" +
+            "      \"all\": 52\n" +
+            "    },\n" +
+            "    \"wind\": {\n" +
+            "      \"speed\": 4.95,\n" +
+            "      \"deg\": 49,\n" +
+            "      \"gust\": 5.73\n" +
+            "    },\n" +
+            "    \"visibility\": 10000,\n" +
+            "    \"pop\": 0,\n" +
+            "    \"sys\": {\n" +
+            "      \"pod\": \"d\"\n" +
+            "    },\n" +
+            "    \"dt_txt\": \"2022-10-27 15:00:00\"\n" +
+            "  }],\n" +
+            "  \"city\": {\n" +
+            "    \"id\": 360630,\n" +
+            "    \"name\": \"Cairo\",\n" +
+            "    \"coord\": {\n" +
+            "      \"lat\": 30.0626,\n" +
+            "      \"lon\": 31.2497\n" +
+            "    },\n" +
+            "    \"country\": \"EG\",\n" +
+            "    \"population\": 7734614,\n" +
+            "    \"timezone\": 7200,\n" +
+            "    \"sunrise\": 1666843492,\n" +
+            "    \"sunset\": 1666883561\n" +
+            "  }\n" +
+            "}"
 }

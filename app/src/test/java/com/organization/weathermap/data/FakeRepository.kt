@@ -4,45 +4,49 @@ import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
 import com.organization.weathermap.data.api.model.ApiContainer
 import com.organization.weathermap.data.api.model.mapToDomain
-import com.organization.weathermap.data.cache.model.CachedArticle
+import com.organization.weathermap.data.cache.model.CachedCity
+import com.organization.weathermap.data.cache.model.CachedCityWithForecast
+import com.organization.weathermap.data.cache.model.CachedForecast
 import com.organization.weathermap.data.cache.model.toDomain
 import com.organization.weathermap.data.utils.JsonReader
-import com.organization.weathermap.domain.model.Article
-import com.organization.weathermap.domain.repository.ArticlesRepository
+import com.organization.weathermap.domain.model.City
+import com.organization.weathermap.domain.repository.WeatherRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
-class FakeRepository @Inject constructor() : ArticlesRepository {
+class FakeRepository @Inject constructor() : WeatherRepository {
     var apiResponse: ApiContainer
 
     init {
         val gson = GsonBuilder().serializeNulls().create();
         val type = object : TypeToken<ApiContainer>() {}.type
-        val articlesRes = JsonReader.getJson("articles.json")
+        val articlesRes = JsonReader.getJson("forecast.json")
         apiResponse = gson.fromJson(articlesRes, type)!!
     }
 
-    val localArticles: List<CachedArticle> get() = mutableLocalArticles
-    private val mutableLocalArticles = mutableListOf<CachedArticle>()
-    override suspend fun requestArticles(section: String, period: Int): List<Article> {
+    val localCity: List<CachedCity> get() = mutableLocalCity
+    private val mutableLocalCity = mutableListOf<CachedCity>()
+    val localForecast: List<CachedForecast> get() = mutableForecast
+    private val mutableForecast = mutableListOf<CachedForecast>()
 
-        return apiResponse.articles.map { it.mapToDomain() }
+    override suspend fun requestWeather(city: String): City {
+        return apiResponse.mapToDomain()
     }
 
-    override suspend fun storeArticles(articles: List<Article>) {
-        mutableLocalArticles.addAll(articles.map { CachedArticle.fromDomain(it) })
-    }
-
-    override fun getArticles(): Flow<List<Article>> {
-        return flow {
-            emit(localArticles.map { it.toDomain() })
+    override suspend fun storeWeather(city: City) {
+        mutableLocalCity.add(CachedCity.fromDomain(city))
+        city.weather.forEach {
+            mutableForecast.add(CachedForecast.fromDomain(city.id, it))
         }
     }
 
-    override fun getArticle(id: Long): Flow<Article> {
+    override fun getWeather(name: String): Flow<City> {
+        val cachedCity = mutableLocalCity.first { it.name == name }
+        val cachedForecast = mutableForecast.filter { cachedCity.cityId == it.cityId }
+        val cached = CachedCityWithForecast(cachedCity, cachedForecast)
         return flow {
-            localArticles.filter{ it.articleId == id }.firstOrNull()?.let { emit(it.toDomain()) }
+            emit(cached.toDomain())
         }
     }
 }

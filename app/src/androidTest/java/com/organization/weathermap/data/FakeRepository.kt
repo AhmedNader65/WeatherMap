@@ -19,7 +19,7 @@ class FakeRepository @Inject constructor() : WeatherRepository {
     init {
         val gson = GsonBuilder().serializeNulls().create();
         val type = object : TypeToken<ApiContainer>() {}.type
-        val articlesRes = JsonReader.getJson("articles.json")
+        val articlesRes = JsonReader.getJson("forecast.json")
         apiResponse = gson.fromJson(articlesRes, type)!!
     }
 

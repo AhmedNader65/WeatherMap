@@ -27,7 +27,7 @@ class FakeServer {
     fun setHappyPathDispatcher() {
         mockWebServer.dispatcher = object : Dispatcher() {
             override fun dispatch(request: RecordedRequest): MockResponse {
-                return MockResponse().setResponseCode(200).setBody(getJson("articles.json"))
+                return MockResponse().setResponseCode(200).setBody(getJson("forecast.json"))
             }
         }
     }

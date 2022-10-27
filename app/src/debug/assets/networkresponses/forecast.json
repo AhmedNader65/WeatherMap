@@ -1,0 +1,54 @@
+{
+  "cod": "200",
+  "message": 0,
+  "cnt": 40,
+  "list": [ {
+    "dt": 1666882800,
+    "main": {
+      "temp": 301.65,
+      "feels_like": 301.43,
+      "temp_min": 301.65,
+      "temp_max": 301.82,
+      "pressure": 1016,
+      "sea_level": 1016,
+      "grnd_level": 1013,
+      "humidity": 42,
+      "temp_kf": -0.17
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04d"
+      }
+    ],
+    "clouds": {
+      "all": 52
+    },
+    "wind": {
+      "speed": 4.95,
+      "deg": 49,
+      "gust": 5.73
+    },
+    "visibility": 10000,
+    "pop": 0,
+    "sys": {
+      "pod": "d"
+    },
+    "dt_txt": "2022-10-27 15:00:00"
+  }],
+  "city": {
+    "id": 360630,
+    "name": "Cairo",
+    "coord": {
+      "lat": 30.0626,
+      "lon": 31.2497
+    },
+    "country": "EG",
+    "population": 7734614,
+    "timezone": 7200,
+    "sunrise": 1666843492,
+    "sunset": 1666883561
+  }
+}
